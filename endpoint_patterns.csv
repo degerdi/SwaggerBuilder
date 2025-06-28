@@ -1,0 +1,736 @@
+pattern,category,priority,framework,industry,description
+# Core API Documentation and Health Endpoints
+/swagger.json,documentation,1,any,any,Swagger JSON specification
+/swagger.yaml,documentation,1,any,any,Swagger YAML specification
+/openapi.json,documentation,1,any,any,OpenAPI JSON specification
+/openapi.yaml,documentation,1,any,any,OpenAPI YAML specification
+/api-docs,documentation,1,any,any,API documentation endpoint
+/api-docs.json,documentation,1,any,any,API documentation JSON
+/docs,documentation,1,any,any,Documentation endpoint
+/documentation,documentation,1,any,any,Documentation page
+/swagger-ui.html,documentation,1,any,any,Swagger UI interface
+/redoc,documentation,1,any,any,ReDoc documentation interface
+/health,health,1,any,any,Health check endpoint
+/status,health,1,any,any,Status check endpoint
+/ping,health,1,any,any,Ping endpoint
+/info,health,1,any,any,Information endpoint
+/metrics,health,1,any,any,Metrics endpoint
+/version,health,1,any,any,Version information
+/ready,health,1,any,any,Readiness probe
+/live,health,1,any,any,Liveness probe
+
+# HTTPBin.org Specific (High Priority for Testing)
+/get,testing,1,httpbin,testing,HTTPBin GET endpoint
+/post,testing,1,httpbin,testing,HTTPBin POST endpoint
+/put,testing,1,httpbin,testing,HTTPBin PUT endpoint
+/patch,testing,1,httpbin,testing,HTTPBin PATCH endpoint
+/delete,testing,1,httpbin,testing,HTTPBin DELETE endpoint
+/status/200,testing,1,httpbin,testing,HTTPBin status 200
+/status/404,testing,1,httpbin,testing,HTTPBin status 404
+/status/500,testing,1,httpbin,testing,HTTPBin status 500
+/headers,testing,1,httpbin,testing,HTTPBin headers endpoint
+/ip,testing,1,httpbin,testing,HTTPBin IP endpoint
+/user-agent,testing,1,httpbin,testing,HTTPBin user agent
+/uuid,testing,1,httpbin,testing,HTTPBin UUID generator
+/json,testing,1,httpbin,testing,HTTPBin JSON endpoint
+/xml,testing,1,httpbin,testing,HTTPBin XML endpoint
+/html,testing,1,httpbin,testing,HTTPBin HTML endpoint
+/robots.txt,testing,1,httpbin,testing,HTTPBin robots.txt
+/deny,testing,1,httpbin,testing,HTTPBin deny endpoint
+/cache,testing,1,httpbin,testing,HTTPBin cache endpoint
+/etag,testing,1,httpbin,testing,HTTPBin etag endpoint
+/deflate,testing,1,httpbin,testing,HTTPBin deflate endpoint
+/gzip,testing,1,httpbin,testing,HTTPBin gzip endpoint
+/response-headers,testing,1,httpbin,testing,HTTPBin response headers
+/redirect/1,testing,1,httpbin,testing,HTTPBin redirect
+/relative-redirect/1,testing,1,httpbin,testing,HTTPBin relative redirect
+/absolute-redirect/1,testing,1,httpbin,testing,HTTPBin absolute redirect
+/redirect-to,testing,1,httpbin,testing,HTTPBin redirect to
+/stream/1,testing,1,httpbin,testing,HTTPBin stream
+/delay/1,testing,1,httpbin,testing,HTTPBin delay
+/drip,testing,1,httpbin,testing,HTTPBin drip
+/range/1024,testing,1,httpbin,testing,HTTPBin range
+/basic-auth/user/passwd,testing,1,httpbin,testing,HTTPBin basic auth
+/bearer,testing,1,httpbin,testing,HTTPBin bearer auth
+/digest-auth/auth/user/passwd,testing,1,httpbin,testing,HTTPBin digest auth
+/hidden-basic-auth/user/passwd,testing,1,httpbin,testing,HTTPBin hidden basic auth
+
+# Standard API Patterns
+/api,core,1,any,any,Main API endpoint
+/api/v1,core,1,any,any,API version 1
+/api/v2,core,1,any,any,API version 2
+/api/v3,core,1,any,any,API version 3
+/api/v4,core,1,any,any,API version 4
+/rest,core,1,any,any,REST API endpoint
+/rest/v1,core,1,any,any,REST API version 1
+/rest/v2,core,1,any,any,REST API version 2
+/v1,core,1,any,any,Version 1 endpoint
+/v2,core,1,any,any,Version 2 endpoint
+/v3,core,1,any,any,Version 3 endpoint
+/webapi,core,2,any,any,Web API endpoint
+/service,core,2,any,any,Service endpoint
+/services,core,2,any,any,Services endpoint
+/gateway,core,2,any,any,Gateway endpoint
+/proxy,core,2,any,any,Proxy endpoint
+
+# Authentication and Authorization
+/auth,auth,1,any,any,Authentication endpoint
+/login,auth,1,any,any,Login endpoint
+/logout,auth,1,any,any,Logout endpoint
+/signin,auth,1,any,any,Sign in endpoint
+/signout,auth,1,any,any,Sign out endpoint
+/register,auth,1,any,any,Registration endpoint
+/signup,auth,1,any,any,Sign up endpoint
+/authenticate,auth,1,any,any,Authentication endpoint
+/token,auth,1,any,any,Token endpoint
+/tokens,auth,1,any,any,Tokens endpoint
+/refresh,auth,1,any,any,Token refresh endpoint
+/oauth,auth,1,any,any,OAuth endpoint
+/oauth2,auth,1,any,any,OAuth2 endpoint
+/sso,auth,1,any,any,Single sign-on endpoint
+/session,auth,1,any,any,Session endpoint
+/sessions,auth,1,any,any,Sessions endpoint
+/api/auth,auth,1,any,any,API authentication
+/api/auth/login,auth,1,any,any,API login
+/api/auth/logout,auth,1,any,any,API logout
+/api/auth/token,auth,1,any,any,API token
+/api/auth/refresh,auth,1,any,any,API token refresh
+/api/oauth,auth,1,any,any,API OAuth
+/api/oauth2,auth,1,any,any,API OAuth2
+/v1/auth,auth,1,any,any,Auth v1
+/v1/auth/login,auth,1,any,any,Login v1
+/v1/auth/token,auth,1,any,any,Token v1
+/v2/auth,auth,1,any,any,Auth v2
+/v2/auth/login,auth,1,any,any,Login v2
+/v2/auth/token,auth,1,any,any,Token v2
+
+# User Management
+/users,users,1,any,any,Users endpoint
+/user,users,1,any,any,User endpoint
+/accounts,users,1,any,any,Accounts endpoint
+/account,users,1,any,any,Account endpoint
+/customers,users,1,any,any,Customers endpoint
+/customer,users,1,any,any,Customer endpoint
+/profile,users,1,any,any,User profile
+/profiles,users,1,any,any,User profiles
+/me,users,1,any,any,Current user endpoint
+/whoami,users,1,any,any,Who am I endpoint
+/members,users,1,any,any,Members endpoint
+/member,users,1,any,any,Member endpoint
+/people,users,1,any,any,People endpoint
+/person,users,1,any,any,Person endpoint
+/api/users,users,1,any,any,API users
+/api/user,users,1,any,any,API user
+/api/accounts,users,1,any,any,API accounts
+/api/account,users,1,any,any,API account
+/api/customers,users,1,any,any,API customers
+/api/customer,users,1,any,any,API customer
+/api/profile,users,1,any,any,API profile
+/api/me,users,1,any,any,API current user
+/v1/users,users,1,any,any,Users v1
+/v1/user,users,1,any,any,User v1
+/v1/accounts,users,1,any,any,Accounts v1
+/v1/profile,users,1,any,any,Profile v1
+/v1/me,users,1,any,any,Current user v1
+/v2/users,users,1,any,any,Users v2
+/v2/user,users,1,any,any,User v2
+/v2/accounts,users,1,any,any,Accounts v2
+
+# E-commerce and Products
+/products,ecommerce,1,any,ecommerce,Products endpoint
+/product,ecommerce,1,any,ecommerce,Product endpoint
+/items,ecommerce,1,any,ecommerce,Items endpoint
+/item,ecommerce,1,any,ecommerce,Item endpoint
+/catalog,ecommerce,1,any,ecommerce,Product catalog
+/inventory,ecommerce,1,any,ecommerce,Inventory endpoint
+/cart,ecommerce,1,any,ecommerce,Shopping cart
+/carts,ecommerce,1,any,ecommerce,Shopping carts
+/basket,ecommerce,1,any,ecommerce,Shopping basket
+/orders,ecommerce,1,any,ecommerce,Orders endpoint
+/order,ecommerce,1,any,ecommerce,Order endpoint
+/purchases,ecommerce,1,any,ecommerce,Purchases endpoint
+/purchase,ecommerce,1,any,ecommerce,Purchase endpoint
+/checkout,ecommerce,1,any,ecommerce,Checkout endpoint
+/payment,ecommerce,1,any,ecommerce,Payment endpoint
+/payments,ecommerce,1,any,ecommerce,Payments endpoint
+/billing,ecommerce,1,any,ecommerce,Billing endpoint
+/invoices,ecommerce,1,any,ecommerce,Invoices endpoint
+/invoice,ecommerce,1,any,ecommerce,Invoice endpoint
+/shipping,ecommerce,1,any,ecommerce,Shipping endpoint
+/delivery,ecommerce,1,any,ecommerce,Delivery endpoint
+/promotions,ecommerce,2,any,ecommerce,Promotions endpoint
+/promotion,ecommerce,2,any,ecommerce,Promotion endpoint
+/discounts,ecommerce,2,any,ecommerce,Discounts endpoint
+/discount,ecommerce,2,any,ecommerce,Discount endpoint
+/coupons,ecommerce,2,any,ecommerce,Coupons endpoint
+/coupon,ecommerce,2,any,ecommerce,Coupon endpoint
+/deals,ecommerce,2,any,ecommerce,Deals endpoint
+/deal,ecommerce,2,any,ecommerce,Deal endpoint
+/wishlist,ecommerce,2,any,ecommerce,Wishlist endpoint
+/favorites,ecommerce,2,any,ecommerce,Favorites endpoint
+/reviews,ecommerce,2,any,ecommerce,Reviews endpoint
+/review,ecommerce,2,any,ecommerce,Review endpoint
+/ratings,ecommerce,2,any,ecommerce,Ratings endpoint
+/rating,ecommerce,2,any,ecommerce,Rating endpoint
+
+# Healthcare Industry
+/patients,healthcare,1,any,healthcare,Patients endpoint
+/patient,healthcare,1,any,healthcare,Patient endpoint
+/providers,healthcare,1,any,healthcare,Healthcare providers
+/provider,healthcare,1,any,healthcare,Healthcare provider
+/doctors,healthcare,1,any,healthcare,Doctors endpoint
+/doctor,healthcare,1,any,healthcare,Doctor endpoint
+/physicians,healthcare,1,any,healthcare,Physicians endpoint
+/physician,healthcare,1,any,healthcare,Physician endpoint
+/nurses,healthcare,1,any,healthcare,Nurses endpoint
+/nurse,healthcare,1,any,healthcare,Nurse endpoint
+/appointments,healthcare,1,any,healthcare,Appointments endpoint
+/appointment,healthcare,1,any,healthcare,Appointment endpoint
+/schedules,healthcare,1,any,healthcare,Schedules endpoint
+/schedule,healthcare,1,any,healthcare,Schedule endpoint
+/records,healthcare,1,any,healthcare,Medical records
+/record,healthcare,1,any,healthcare,Medical record
+/medical-records,healthcare,1,any,healthcare,Medical records
+/health-records,healthcare,1,any,healthcare,Health records
+/prescriptions,healthcare,2,any,healthcare,Prescriptions endpoint
+/prescription,healthcare,2,any,healthcare,Prescription endpoint
+/medications,healthcare,2,any,healthcare,Medications endpoint
+/medication,healthcare,2,any,healthcare,Medication endpoint
+/drugs,healthcare,2,any,healthcare,Drugs endpoint
+/drug,healthcare,2,any,healthcare,Drug endpoint
+/labs,healthcare,2,any,healthcare,Lab results
+/lab,healthcare,2,any,healthcare,Lab result
+/lab-results,healthcare,2,any,healthcare,Lab results
+/imaging,healthcare,2,any,healthcare,Medical imaging
+/radiology,healthcare,2,any,healthcare,Radiology endpoint
+/vitals,healthcare,2,any,healthcare,Vital signs
+/symptoms,healthcare,2,any,healthcare,Symptoms endpoint
+/diagnoses,healthcare,2,any,healthcare,Diagnoses endpoint
+/diagnosis,healthcare,2,any,healthcare,Diagnosis endpoint
+/treatments,healthcare,2,any,healthcare,Treatments endpoint
+/treatment,healthcare,2,any,healthcare,Treatment endpoint
+/procedures,healthcare,2,any,healthcare,Medical procedures
+/procedure,healthcare,2,any,healthcare,Medical procedure
+/allergies,healthcare,3,any,healthcare,Allergies endpoint
+/conditions,healthcare,3,any,healthcare,Medical conditions
+/condition,healthcare,3,any,healthcare,Medical condition
+/insurance,healthcare,3,any,healthcare,Insurance information
+/claims,healthcare,3,any,healthcare,Insurance claims
+/claim,healthcare,3,any,healthcare,Insurance claim
+
+# Financial Services
+/accounts,finance,1,any,finance,Financial accounts
+/account,finance,1,any,finance,Financial account
+/transactions,finance,1,any,finance,Transactions endpoint
+/transaction,finance,1,any,finance,Transaction endpoint
+/transfers,finance,1,any,finance,Money transfers
+/transfer,finance,1,any,finance,Money transfer
+/payments,finance,1,any,finance,Payments endpoint
+/payment,finance,1,any,finance,Payment endpoint
+/balances,finance,1,any,finance,Account balances
+/balance,finance,1,any,finance,Account balance
+/statements,finance,1,any,finance,Financial statements
+/statement,finance,1,any,finance,Financial statement
+/cards,finance,1,any,finance,Credit/debit cards
+/card,finance,1,any,finance,Credit/debit card
+/loans,finance,2,any,finance,Loans endpoint
+/loan,finance,2,any,finance,Loan endpoint
+/mortgages,finance,2,any,finance,Mortgages endpoint
+/mortgage,finance,2,any,finance,Mortgage endpoint
+/investments,finance,2,any,finance,Investments endpoint
+/investment,finance,2,any,finance,Investment endpoint
+/portfolios,finance,2,any,finance,Investment portfolios
+/portfolio,finance,2,any,finance,Investment portfolio
+/stocks,finance,2,any,finance,Stocks endpoint
+/stock,finance,2,any,finance,Stock endpoint
+/bonds,finance,2,any,finance,Bonds endpoint
+/bond,finance,2,any,finance,Bond endpoint
+/funds,finance,2,any,finance,Mutual funds
+/fund,finance,2,any,finance,Mutual fund
+/rates,finance,2,any,finance,Interest rates
+/rate,finance,2,any,finance,Interest rate
+/quotes,finance,2,any,finance,Stock quotes
+/quote,finance,2,any,finance,Stock quote
+/markets,finance,2,any,finance,Financial markets
+/market,finance,2,any,finance,Financial market
+/currencies,finance,3,any,finance,Currencies endpoint
+/currency,finance,3,any,finance,Currency endpoint
+/forex,finance,3,any,finance,Foreign exchange
+/exchange,finance,3,any,finance,Exchange rates
+/crypto,finance,3,any,finance,Cryptocurrency
+/cryptocurrency,finance,3,any,finance,Cryptocurrency endpoint
+/bitcoin,finance,3,any,finance,Bitcoin endpoint
+/ethereum,finance,3,any,finance,Ethereum endpoint
+/wallet,finance,3,any,finance,Digital wallet
+/wallets,finance,3,any,finance,Digital wallets
+
+# Education Industry
+/students,education,1,any,education,Students endpoint
+/student,education,1,any,education,Student endpoint
+/teachers,education,1,any,education,Teachers endpoint
+/teacher,education,1,any,education,Teacher endpoint
+/instructors,education,1,any,education,Instructors endpoint
+/instructor,education,1,any,education,Instructor endpoint
+/courses,education,1,any,education,Courses endpoint
+/course,education,1,any,education,Course endpoint
+/classes,education,1,any,education,Classes endpoint
+/class,education,1,any,education,Class endpoint
+/lessons,education,1,any,education,Lessons endpoint
+/lesson,education,1,any,education,Lesson endpoint
+/modules,education,1,any,education,Course modules
+/module,education,1,any,education,Course module
+/assignments,education,1,any,education,Assignments endpoint
+/assignment,education,1,any,education,Assignment endpoint
+/homework,education,1,any,education,Homework endpoint
+/exams,education,2,any,education,Exams endpoint
+/exam,education,2,any,education,Exam endpoint
+/tests,education,2,any,education,Tests endpoint
+/test,education,2,any,education,Test endpoint
+/quizzes,education,2,any,education,Quizzes endpoint
+/quiz,education,2,any,education,Quiz endpoint
+/grades,education,1,any,education,Grades endpoint
+/grade,education,1,any,education,Grade endpoint
+/gradebook,education,2,any,education,Gradebook endpoint
+/transcripts,education,2,any,education,Transcripts endpoint
+/transcript,education,2,any,education,Transcript endpoint
+/enrollments,education,1,any,education,Enrollments endpoint
+/enrollment,education,1,any,education,Enrollment endpoint
+/schedules,education,1,any,education,Class schedules
+/schedule,education,1,any,education,Class schedule
+/timetable,education,2,any,education,Timetable endpoint
+/calendar,education,2,any,education,Academic calendar
+/semesters,education,2,any,education,Semesters endpoint
+/semester,education,2,any,education,Semester endpoint
+/terms,education,2,any,education,Academic terms
+/term,education,2,any,education,Academic term
+/departments,education,2,any,education,Departments endpoint
+/department,education,2,any,education,Department endpoint
+/schools,education,2,any,education,Schools endpoint
+/school,education,2,any,education,School endpoint
+
+# Content Management
+/posts,content,1,any,content,Posts endpoint
+/post,content,1,any,content,Post endpoint
+/articles,content,1,any,content,Articles endpoint
+/article,content,1,any,content,Article endpoint
+/blogs,content,1,any,content,Blogs endpoint
+/blog,content,1,any,content,Blog endpoint
+/pages,content,1,any,content,Pages endpoint
+/page,content,1,any,content,Page endpoint
+/content,content,1,any,content,Content endpoint
+/news,content,1,any,content,News endpoint
+/stories,content,2,any,content,Stories endpoint
+/story,content,2,any,content,Story endpoint
+/comments,content,1,any,content,Comments endpoint
+/comment,content,1,any,content,Comment endpoint
+/feedback,content,2,any,content,Feedback endpoint
+/reviews,content,1,any,content,Reviews endpoint
+/review,content,1,any,content,Review endpoint
+/ratings,content,1,any,content,Ratings endpoint
+/rating,content,1,any,content,Rating endpoint
+/categories,content,1,any,content,Categories endpoint
+/category,content,1,any,content,Category endpoint
+/tags,content,1,any,content,Tags endpoint
+/tag,content,1,any,content,Tag endpoint
+/labels,content,2,any,content,Labels endpoint
+/label,content,2,any,content,Label endpoint
+/topics,content,2,any,content,Topics endpoint
+/topic,content,2,any,content,Topic endpoint
+
+# File and Media Management
+/files,files,1,any,any,Files endpoint
+/file,files,1,any,any,File endpoint
+/upload,files,1,any,any,File upload endpoint
+/uploads,files,1,any,any,File uploads endpoint
+/download,files,1,any,any,File download endpoint
+/downloads,files,1,any,any,File downloads endpoint
+/documents,files,1,any,any,Documents endpoint
+/document,files,1,any,any,Document endpoint
+/attachments,files,1,any,any,Attachments endpoint
+/attachment,files,1,any,any,Attachment endpoint
+/media,files,1,any,any,Media files endpoint
+/images,files,1,any,any,Images endpoint
+/image,files,1,any,any,Image endpoint
+/photos,files,1,any,any,Photos endpoint
+/photo,files,1,any,any,Photo endpoint
+/pictures,files,2,any,any,Pictures endpoint
+/picture,files,2,any,any,Picture endpoint
+/videos,files,2,any,any,Videos endpoint
+/video,files,2,any,any,Video endpoint
+/audio,files,2,any,any,Audio files endpoint
+/music,files,2,any,any,Music files endpoint
+/sounds,files,3,any,any,Sound files endpoint
+/sound,files,3,any,any,Sound file endpoint
+/assets,files,1,any,any,Static assets endpoint
+/static,files,1,any,any,Static files endpoint
+/resources,files,2,any,any,Resources endpoint
+/resource,files,2,any,any,Resource endpoint
+/storage,files,2,any,any,File storage endpoint
+/backup,files,3,any,any,Backup files endpoint
+/backups,files,3,any,any,Backup files endpoint
+
+# Spring Boot Framework
+/actuator,health,1,spring,any,Spring Boot Actuator
+/actuator/health,health,1,spring,any,Spring Boot health check
+/actuator/info,health,1,spring,any,Spring Boot info
+/actuator/metrics,health,1,spring,any,Spring Boot metrics
+/actuator/env,health,2,spring,any,Spring Boot environment
+/actuator/beans,health,2,spring,any,Spring Boot beans
+/actuator/mappings,health,2,spring,any,Spring Boot mappings
+/actuator/configprops,health,2,spring,any,Spring Boot config properties
+/actuator/conditions,health,3,spring,any,Spring Boot conditions
+/actuator/threaddump,health,3,spring,any,Spring Boot thread dump
+/actuator/heapdump,health,3,spring,any,Spring Boot heap dump
+/actuator/loggers,health,3,spring,any,Spring Boot loggers
+/actuator/auditevents,health,3,spring,any,Spring Boot audit events
+/actuator/httptrace,health,3,spring,any,Spring Boot HTTP trace
+/actuator/prometheus,health,2,spring,any,Spring Boot Prometheus metrics
+/management,health,2,spring,any,Spring Boot management
+/management/health,health,2,spring,any,Spring Boot management health
+/management/info,health,2,spring,any,Spring Boot management info
+
+# Django Framework
+/admin,admin,1,django,any,Django admin interface
+/admin/,admin,1,django,any,Django admin interface
+/api,core,1,django,any,Django REST Framework API
+/api/,core,1,django,any,Django REST Framework API
+/api/v1,core,1,django,any,Django API v1
+/api/v1/,core,1,django,any,Django API v1
+/accounts,auth,1,django,any,Django accounts
+/accounts/,auth,1,django,any,Django accounts
+/auth,auth,1,django,any,Django authentication
+/auth/,auth,1,django,any,Django authentication
+/api-auth,auth,1,django,any,Django API authentication
+/api-auth/,auth,1,django,any,Django API authentication
+/__debug__,debug,3,django,any,Django debug toolbar
+/static,files,2,django,any,Django static files
+/static/,files,2,django,any,Django static files
+/media,files,2,django,any,Django media files
+/media/,files,2,django,any,Django media files
+
+# FastAPI Framework
+/docs,documentation,1,fastapi,any,FastAPI automatic docs
+/redoc,documentation,1,fastapi,any,FastAPI ReDoc
+/openapi.json,documentation,1,fastapi,any,FastAPI OpenAPI JSON
+/health,health,1,fastapi,any,FastAPI health check
+/metrics,health,1,fastapi,any,FastAPI metrics
+/api/v1,core,1,fastapi,any,FastAPI v1
+
+# WordPress/WP
+/wp-json,core,1,wordpress,any,WordPress REST API
+/wp-json/,core,1,wordpress,any,WordPress REST API
+/wp-json/wp/v2,core,1,wordpress,any,WordPress REST API v2
+/wp-json/wp/v2/,core,1,wordpress,any,WordPress REST API v2
+/wp-admin,admin,1,wordpress,any,WordPress admin
+/wp-admin/,admin,1,wordpress,any,WordPress admin
+/wp-content,files,2,wordpress,any,WordPress content
+/wp-content/,files,2,wordpress,any,WordPress content
+/wp-includes,files,3,wordpress,any,WordPress includes
+/wp-includes/,files,3,wordpress,any,WordPress includes
+/xmlrpc.php,core,2,wordpress,any,WordPress XML-RPC
+/feed,content,2,wordpress,any,WordPress RSS feed
+/feed/,content,2,wordpress,any,WordPress RSS feed
+/rss,content,2,wordpress,any,WordPress RSS
+/rss/,content,2,wordpress,any,WordPress RSS
+/atom,content,3,wordpress,any,WordPress Atom feed
+/atom/,content,3,wordpress,any,WordPress Atom feed
+
+# Laravel Framework
+/api,core,1,laravel,any,Laravel API
+/api/,core,1,laravel,any,Laravel API
+/admin,admin,1,laravel,any,Laravel admin
+/admin/,admin,1,laravel,any,Laravel admin
+/horizon,admin,2,laravel,any,Laravel Horizon
+/horizon/,admin,2,laravel,any,Laravel Horizon
+/telescope,admin,2,laravel,any,Laravel Telescope
+/telescope/,admin,2,laravel,any,Laravel Telescope
+/nova,admin,2,laravel,any,Laravel Nova
+/nova/,admin,2,laravel,any,Laravel Nova
+/storage,files,2,laravel,any,Laravel storage
+/storage/,files,2,laravel,any,Laravel storage
+
+# Ruby on Rails Framework
+/rails/info,health,1,rails,any,Rails info
+/rails/info/,health,1,rails,any,Rails info
+/admin,admin,1,rails,any,Rails admin
+/admin/,admin,1,rails,any,Rails admin
+/api/v1,core,1,rails,any,Rails API v1
+/api/v1/,core,1,rails,any,Rails API v1
+/sidekiq,admin,2,rails,any,Sidekiq web UI
+/sidekiq/,admin,2,rails,any,Sidekiq web UI
+
+# ASP.NET Framework
+/api,core,1,aspnet,any,ASP.NET API
+/api/,core,1,aspnet,any,ASP.NET API
+/swagger,documentation,1,aspnet,any,ASP.NET Swagger
+/swagger/,documentation,1,aspnet,any,ASP.NET Swagger
+/health,health,1,aspnet,any,ASP.NET health
+/diagnostics,health,2,aspnet,any,ASP.NET diagnostics
+/diagnostics/,health,2,aspnet,any,ASP.NET diagnostics
+
+# Express.js/Node.js Framework
+/api,core,1,express,any,Express API
+/api/,core,1,express,any,Express API
+/health,health,1,express,any,Express health
+/status,health,1,express,any,Express status
+/metrics,health,1,express,any,Express metrics
+/admin,admin,2,express,any,Express admin
+
+# Common Admin Interfaces
+/admin,admin,1,any,any,Admin interface
+/admin/,admin,1,any,any,Admin interface
+/administration,admin,2,any,any,Administration interface
+/management,admin,2,any,any,Management interface
+/console,admin,2,any,any,Admin console
+/dashboard,admin,1,any,any,Dashboard interface
+/control,admin,3,any,any,Control panel
+/panel,admin,3,any,any,Admin panel
+/cp,admin,3,any,any,Control panel (short)
+
+# Search and Query Endpoints
+/search,search,1,any,any,Search endpoint
+/query,search,1,any,any,Query endpoint
+/find,search,2,any,any,Find endpoint
+/lookup,search,2,any,any,Lookup endpoint
+/filter,search,2,any,any,Filter endpoint
+/sort,search,3,any,any,Sort endpoint
+/autocomplete,search,2,any,any,Autocomplete endpoint
+/suggest,search,2,any,any,Suggestion endpoint
+/suggestions,search,2,any,any,Suggestions endpoint
+
+# Notification and Messaging
+/notifications,messaging,1,any,any,Notifications endpoint
+/notification,messaging,1,any,any,Notification endpoint
+/messages,messaging,1,any,any,Messages endpoint
+/message,messaging,1,any,any,Message endpoint
+/alerts,messaging,1,any,any,Alerts endpoint
+/alert,messaging,1,any,any,Alert endpoint
+/mail,messaging,2,any,any,Mail endpoint
+/email,messaging,2,any,any,Email endpoint
+/emails,messaging,2,any,any,Emails endpoint
+/sms,messaging,2,any,any,SMS endpoint
+/push,messaging,2,any,any,Push notifications
+/chat,messaging,2,any,any,Chat endpoint
+/channels,messaging,2,any,any,Communication channels
+/channel,messaging,2,any,any,Communication channel
+
+# Analytics and Reporting
+/analytics,analytics,1,any,any,Analytics endpoint
+/reports,analytics,1,any,any,Reports endpoint
+/report,analytics,1,any,any,Report endpoint
+/stats,analytics,1,any,any,Statistics endpoint
+/statistics,analytics,1,any,any,Statistics endpoint
+/metrics,analytics,1,any,any,Metrics endpoint
+/dashboard,analytics,1,any,any,Analytics dashboard
+/insights,analytics,2,any,any,Insights endpoint
+/tracking,analytics,2,any,any,Tracking endpoint
+/events,analytics,2,any,any,Events tracking
+/event,analytics,2,any,any,Event tracking
+/logs,analytics,2,any,any,Logs endpoint
+/log,analytics,2,any,any,Log endpoint
+/audit,analytics,2,any,any,Audit logs
+/performance,analytics,2,any,any,Performance metrics
+
+# Settings and Configuration
+/settings,config,1,any,any,Settings endpoint
+/config,config,1,any,any,Configuration endpoint
+/configuration,config,1,any,any,Configuration endpoint
+/preferences,config,1,any,any,User preferences
+/options,config,2,any,any,Options endpoint
+/parameters,config,2,any,any,Parameters endpoint
+/env,config,3,any,any,Environment variables
+/environment,config,3,any,any,Environment settings
+
+# Social and Community Features
+/social,social,2,any,any,Social features
+/friends,social,2,any,any,Friends endpoint
+/followers,social,2,any,any,Followers endpoint
+/following,social,2,any,any,Following endpoint
+/feed,social,2,any,any,Social feed
+/timeline,social,2,any,any,Timeline endpoint
+/activity,social,2,any,any,Activity feed
+/activities,social,2,any,any,Activities endpoint
+
+# Booking and Reservation Systems
+/bookings,booking,1,any,travel,Bookings endpoint
+/booking,booking,1,any,travel,Booking endpoint
+/reservations,booking,1,any,travel,Reservations endpoint
+/reservation,booking,1,any,travel,Reservation endpoint
+/appointments,booking,1,any,healthcare,Appointments endpoint
+/appointment,booking,1,any,healthcare,Appointment endpoint
+/schedules,booking,1,any,any,Schedules endpoint
+/schedule,booking,1,any,any,Schedule endpoint
+/availability,booking,2,any,any,Availability endpoint
+/calendar,booking,1,any,any,Calendar endpoint
+/events,booking,1,any,any,Events endpoint
+/event,booking,1,any,any,Event endpoint
+
+# Gaming and Entertainment
+/games,gaming,1,any,gaming,Games endpoint
+/game,gaming,1,any,gaming,Game endpoint
+/players,gaming,1,any,gaming,Players endpoint
+/player,gaming,1,any,gaming,Player endpoint
+/matches,gaming,1,any,gaming,Matches endpoint
+/match,gaming,1,any,gaming,Match endpoint
+/tournaments,gaming,2,any,gaming,Tournaments endpoint
+/tournament,gaming,2,any,gaming,Tournament endpoint
+/leaderboards,gaming,1,any,gaming,Leaderboards endpoint
+/leaderboard,gaming,1,any,gaming,Leaderboard endpoint
+/scores,gaming,1,any,gaming,Scores endpoint
+/score,gaming,1,any,gaming,Score endpoint
+/achievements,gaming,2,any,gaming,Achievements endpoint
+/achievement,gaming,2,any,gaming,Achievement endpoint
+/guilds,gaming,2,any,gaming,Guilds endpoint
+/guild,gaming,2,any,gaming,Guild endpoint
+/teams,gaming,1,any,gaming,Teams endpoint
+/team,gaming,1,any,gaming,Team endpoint
+
+# IoT and Device Management
+/devices,iot,1,any,iot,Devices endpoint
+/device,iot,1,any,iot,Device endpoint
+/sensors,iot,1,any,iot,Sensors endpoint
+/sensor,iot,1,any,iot,Sensor endpoint
+/telemetry,iot,1,any,iot,Telemetry data
+/measurements,iot,1,any,iot,Measurements endpoint
+/measurement,iot,1,any,iot,Measurement endpoint
+/readings,iot,2,any,iot,Sensor readings
+/reading,iot,2,any,iot,Sensor reading
+/data,iot,1,any,iot,IoT data endpoint
+/streams,iot,2,any,iot,Data streams
+/stream,iot,2,any,iot,Data stream
+
+# Workflow and Process Management
+/workflows,workflow,1,any,any,Workflows endpoint
+/workflow,workflow,1,any,any,Workflow endpoint
+/processes,workflow,1,any,any,Processes endpoint
+/process,workflow,1,any,any,Process endpoint
+/tasks,workflow,1,any,any,Tasks endpoint
+/task,workflow,1,any,any,Task endpoint
+/jobs,workflow,1,any,any,Jobs endpoint
+/job,workflow,1,any,any,Job endpoint
+/queues,workflow,2,any,any,Job queues
+/queue,workflow,2,any,any,Job queue
+/pipelines,workflow,2,any,any,Pipelines endpoint
+/pipeline,workflow,2,any,any,Pipeline endpoint
+
+# Geographic and Location Services
+/locations,location,1,any,any,Locations endpoint
+/location,location,1,any,any,Location endpoint
+/addresses,location,1,any,any,Addresses endpoint
+/address,location,1,any,any,Address endpoint
+/places,location,1,any,any,Places endpoint
+/place,location,1,any,any,Place endpoint
+/regions,location,2,any,any,Regions endpoint
+/region,location,2,any,any,Region endpoint
+/countries,location,1,any,any,Countries endpoint
+/country,location,1,any,any,Country endpoint
+/cities,location,1,any,any,Cities endpoint
+/city,location,1,any,any,City endpoint
+/states,location,2,any,any,States endpoint
+/state,location,2,any,any,State endpoint
+/coordinates,location,2,any,any,Coordinates endpoint
+/geo,location,2,any,any,Geographic data
+/maps,location,2,any,any,Maps endpoint
+/map,location,2,any,any,Map endpoint
+
+# Travel Industry Specific
+/flights,travel,1,any,travel,Flights endpoint
+/flight,travel,1,any,travel,Flight endpoint
+/hotels,travel,1,any,travel,Hotels endpoint
+/hotel,travel,1,any,travel,Hotel endpoint
+/cars,travel,1,any,travel,Car rentals
+/car,travel,1,any,travel,Car rental
+/rentals,travel,1,any,travel,Rentals endpoint
+/rental,travel,1,any,travel,Rental endpoint
+/destinations,travel,1,any,travel,Destinations endpoint
+/destination,travel,1,any,travel,Destination endpoint
+/itineraries,travel,1,any,travel,Itineraries endpoint
+/itinerary,travel,1,any,travel,Itinerary endpoint
+/trips,travel,1,any,travel,Trips endpoint
+/trip,travel,1,any,travel,Trip endpoint
+/vacations,travel,2,any,travel,Vacations endpoint
+/vacation,travel,2,any,travel,Vacation endpoint
+
+# Security and Compliance
+/security,security,1,any,any,Security endpoint
+/permissions,security,1,any,any,Permissions endpoint
+/permission,security,1,any,any,Permission endpoint
+/roles,security,1,any,any,Roles endpoint
+/role,security,1,any,any,Role endpoint
+/privileges,security,2,any,any,Privileges endpoint
+/privilege,security,2,any,any,Privilege endpoint
+/access,security,1,any,any,Access control
+/policies,security,2,any,any,Security policies
+/policy,security,2,any,any,Security policy
+/compliance,security,2,any,any,Compliance endpoint
+/audit,security,1,any,any,Audit endpoint
+/logs,security,1,any,any,Security logs
+
+# Common File Patterns
+/robots.txt,files,1,any,any,Robots.txt file
+/sitemap.xml,files,1,any,any,Sitemap XML
+/sitemap.txt,files,2,any,any,Sitemap text
+/humans.txt,files,3,any,any,Humans.txt file
+/favicon.ico,files,1,any,any,Favicon
+/manifest.json,files,2,any,any,Web app manifest
+/.well-known/security.txt,security,2,any,any,Security contact info
+/.well-known/openid_configuration,auth,2,any,any,OpenID configuration
+/.well-known/jwks.json,auth,2,any,any,JSON Web Key Set
+/.well-known/oauth-authorization-server,auth,2,any,any,OAuth authorization server
+
+# Error and Test Pages
+/404,testing,2,any,any,404 error page
+/500,testing,2,any,any,500 error page
+/error,testing,2,any,any,Error page
+/test,testing,1,any,any,Test endpoint
+/tests,testing,1,any,any,Tests endpoint
+/ping,testing,1,any,any,Ping endpoint
+/echo,testing,2,any,any,Echo endpoint
+/debug,debug,3,any,any,Debug endpoint
+/dev,debug,3,any,any,Development endpoint
+/development,debug,3,any,any,Development endpoint
+
+# Additional Versioning Patterns
+/1.0,core,2,any,any,Version 1.0
+/1.1,core,2,any,any,Version 1.1
+/2.0,core,2,any,any,Version 2.0
+/2.1,core,2,any,any,Version 2.1
+/3.0,core,2,any,any,Version 3.0
+/latest,core,2,any,any,Latest version
+/current,core,2,any,any,Current version
+/stable,core,2,any,any,Stable version
+/beta,core,3,any,any,Beta version
+/alpha,core,3,any,any,Alpha version
+/preview,core,3,any,any,Preview version
+/canary,core,3,any,any,Canary version
+
+# Mobile and App Specific
+/mobile,mobile,2,any,any,Mobile API
+/mobile/,mobile,2,any,any,Mobile API
+/app,mobile,1,any,any,App API
+/app/,mobile,1,any,any,App API
+/ios,mobile,2,any,any,iOS API
+/ios/,mobile,2,any,any,iOS API
+/android,mobile,2,any,any,Android API
+/android/,mobile,2,any,any,Android API
+
+# Webhook and Integration Endpoints
+/webhooks,integration,1,any,any,Webhooks endpoint
+/webhook,integration,1,any,any,Webhook endpoint
+/callbacks,integration,1,any,any,Callbacks endpoint
+/callback,integration,1,any,any,Callback endpoint
+/integrations,integration,1,any,any,Integrations endpoint
+/integration,integration,1,any,any,Integration endpoint
+/api/webhooks,integration,1,any,any,API webhooks
+/api/callbacks,integration,1,any,any,API callbacks
+
+# Subscription and Plan Management
+/subscriptions,subscription,1,any,any,Subscriptions endpoint
+/subscription,subscription,1,any,any,Subscription endpoint
+/plans,subscription,1,any,any,Plans endpoint
+/plan,subscription,1,any,any,Plan endpoint
+/packages,subscription,2,any,any,Packages endpoint
+/package,subscription,2,any,any,Package endpoint
+/tiers,subscription,2,any,any,Pricing tiers
+/tier,subscription,2,any,any,Pricing tier
+/pricing,subscription,1,any,any,Pricing endpoint
